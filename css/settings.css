@@ -16,4 +16,5 @@ nav ul li a:hover{
     background-color: rgba(52, 51, 51, 0.27);
     color: white;
     transform: scale(1.05);
+    cursor: pointer;
 }
