@@ -1,5 +1,6 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
 }
 
 nav ul li{
@@ -30,6 +31,9 @@ div ul li{
 img:hover{
     transform: scale(1.05);
     filter: brightness(1.2);
+}
+h1{
+    text-align: center;
 }
 
 
