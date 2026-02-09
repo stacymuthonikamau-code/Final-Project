@@ -1,3 +1,6 @@
+## Project name
+# payroll system
+
 ## Key contributors
 -Denis Koiyo
 -Stacy Kamau
