@@ -1,5 +1,4 @@
-## Project name
-# payroll system
+# PAYROLL SYSTEM
 
 ## Key contributors
 -Denis Koiyo
