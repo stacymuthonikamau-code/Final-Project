@@ -4,19 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign up page</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="/css/signup.css">
 </head>
 <body>
     <h1>SIGN UP HERE:</h1>
     <form action="">
-        <label for="name">Name:</label>
-        <input type="text" name="name" id="name" placeholder="Enter name here:" required>
+        <main id="fullnames">
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="First name:" required>
+
+            <label for="mname">Middle Name:</label>
+            <input type="text" name="mname" id="mname" placeholder="Middle name:" required>
+
+            <label for="sname">Surname:</label>
+            <input type="text" name="sname" id="sname" placeholder="Surname:" required>
+        </main>
 
         <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="Ente email here:" required>
 
         <label for="password">Password:</label>
         <input type="password" name="password" id="password" placeholder="Enter password here:" required>
+
+        <main id="department">
+            <label for="ministry">Ministry</label>
+            <select name="ministry" id="ministry">
+                <option value=""disable selected>select your ministry</option>
+                <option value="Health">Ministry of health</option>
+                <option value="edu">Ministry of Education</option>
+            </select>
+
+            <label for="health">Specific job(if health)</label>
+            <select id="positions" name="positions">
+                <option value=""disabled selected>Select Your Position</option>
+                <option value="MO Intern">MO Intern</option>
+                <option value="Medical Officer">MO</option>
+                <option value="Senior Consultant">Senior Consultant</option>
+                <option value="CO Intern">CO Intern</option>
+                <option value="Clinical Officer">Clinical Officer</option>
+                <option value="Senior CO/Specialist">Senior CO/Specialist</option>
+                <option value="Nursing Officer Intern"> Nursing Officer Intern</option>
+                <option value="Enrolled nurse III (JG G)">Enrolled Nurse III</option>
+                <option value="Registered nurse III (JG H)">Registered Nurse III</option>
+                <option value="Senior/Chief Registered nurse(JG L-M)">Senior/Chief registered nurse (JG L-M)</option>
+                <option value="Senior principal nurse(JG P)">Senior principal nurse(JG P)</option>
+                <option value="Community Health Ass. worker">Community Health Ass. worker</option>
+                <option value="Public Health Officer">PHO</option>
+                <option value="Epidemiologist/Disease Serveillance Officer">Epidemiologist/ Disease Serveillance Officer</option>
+                <option value="Medical Laboratory Technologist">Medical Laboratory Technologist</option>
+                <option value="Health Records & Information Officer">Health Records & Information Officer</option>
+                <option value="Health Administrator">Health Administrator</option>
+                <option value="Accountant (Health Department)">Accountant (Health Department)</option>
+                <option value="Mortuary Attendants/Technicians">Mortuary Attendants/Technicians</option>
+            </select>
+
+            <label for="facility">Facility name:</label>
+            <input type="text" id="facility" placeholder="facility name:" required>
+
+            <label for="edu">Specific job(if education)</label>
+            <select id="positions" name="positions">
+                <option value="" disabled selected>Select Your Position</option>
+                <option value="Primary School Teacher">Primary School Teacher</option>
+                <option value="Secondary School Teacher">Secondary School Teacher</option>
+                <option value="University Lecturer">University Lecturer</option>
+                <option value="Education Officer">Education Officer</option>
+                <option value="Quality Assurance Officer">Quality Assurance and Standards Officer</option>
+                <option value="Curriculum Development Officer">Curriculum Development Officer</option>
+                <option value="Chief Principal">Chief Principal (Secondary School)</option>
+                <option value="Director of Education">Director of Education</option>
+                <option value="Researcher">Education Researcher/Education Consultant</option>
+                <option value="Administrative Staff">Education Support Staff </option>
+            </select>
+
+            <label for="inst">Institution name:</label>
+            <input type="text" id="inst" placeholder="Institution name" required>
+                
+        </main>
+
+        <main id="location">
+            <label for="county">County:</label>
+            <input type="text" name="county" id="county" placeholder="Enter county" required>
+        </main>
 
         <label>
             <input type="checkbox" name="receive" id="receive" value="Receive updates from us">Would you like to receive updates from us?
