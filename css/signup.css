@@ -1,0 +1,40 @@
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(224, 249, 224);
+}
+
+form{
+    width: 300px;
+    border-radius: 10px;
+    padding: 25px;
+    background-color: rgb(154, 216, 154);
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 2px solid grey;
+}
+h1{
+    text-align: center;
+    margin-bottom: 45px;
+}
+
+input, label{
+    display: block;
+}
+button{
+    background-color: green;
+    padding: 4px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: yellowgreen;
+}
+input{
+    border-radius: 3px;
+    border: 1px solid grey;
+}
