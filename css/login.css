@@ -1,16 +1,41 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(243, 255, 243);
 }
 
 form{
     width: 300px;
     border-radius: 10px;
-    padding: 20px;
+    padding: 25px;
     background-color: rgb(154, 216, 154);
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin: 0 auto;
+    border: 2px solid grey;
 }
 h1{
     text-align: center;
+    margin-bottom: 100px;
+}
+
+input, label{
+    display: block;
+}
+footer{
+    margin-top: 100px;
+    position: fixed;
+    margin-bottom: 0;
+}
+button{
+    background-color: green;
+    padding: 4px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid grey;
+}
+button:hover{
+    transform: scale(1.05);
+    background-color: yellowgreen;
 }
