@@ -1,6 +1,6 @@
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(224, 249, 224);
+     background-color: rgb(224, 249, 224);
 }
 
 form{
@@ -15,11 +15,16 @@ form{
 }
 h1{
     text-align: center;
-    margin-bottom: 45px;
+    margin-bottom: 100px;
 }
 
 input, label{
     display: block;
+}
+footer{
+    margin-top: 100px;
+    position: fixed;
+    margin-bottom: 0;
 }
 button{
     background-color: green;
