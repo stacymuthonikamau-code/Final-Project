@@ -39,3 +39,7 @@ button:hover{
     transform: scale(1.05);
     background-color: yellowgreen;
 }
+input{
+    border-radius: 3px;
+    border: 1px solid grey;
+}
