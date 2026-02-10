@@ -35,5 +35,13 @@ img:hover{
 h1{
     text-align: center;
 }
+article{
+    width: 350px;
+}
+#smedia{
+    display: flex;
+}
 
-
+footer{
+    position: fixed;
+}
