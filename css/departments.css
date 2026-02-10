@@ -18,3 +18,21 @@ nav ul li a:hover{
     transform: scale(1.05);
     cursor: pointer;
 }
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgb(224, 249, 224);
+}
+img{
+    width: 200px;
+}
+
+#Health{
+    display: flex;
+    width: 750px;
+    gap: 15px;
+}
+#EDUCATION{
+    display: flex;
+    width: 700px;
+    gap: 15px;
+}
