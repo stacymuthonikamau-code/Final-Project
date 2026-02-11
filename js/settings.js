@@ -1,11 +1,10 @@
-const localStorage = require('localStorage');
 // book
 function Employee(fname, mname, sname, email, ministry, specificjob, facility, location, institution, position){
     this.id = Date.now();
     this.fullname = `${fname} ${mname} ${sname}`;
     this.email = email;
     this.ministry = ministry;
-    this.job = specificjob;
+    this.job = specificjob = ministry === 'Health' ? hpositions : epositions;
     this.facility = facility;
     this.location = location;
     this.position = position;
@@ -14,7 +13,9 @@ function Employee(fname, mname, sname, email, ministry, specificjob, facility, l
 
 //library
 function Allemployees(){
-    this.person = new Map();
+    const saved = JSON.parse(localStorage.getItem('employeeData')) || [];
+    this.person = new Map(saved.map(emp => [emp.id, emp]));
+    this.render();
 }
 
 //c
