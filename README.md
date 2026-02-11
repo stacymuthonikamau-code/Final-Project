@@ -1,42 +1,63 @@
 # PAYROLL SYSTEM
 
-## Key contributors
+## Key Contributors
 
-- Denis Koiyo
-- Stacy Kamau
-- Julia Wambua
-- Yussuf Abdirizak Mohamed
+* Denis Koiyo
+* Stacy Kamau
+* Julia Wambua
+* Yussuf Abdirizak Mohamed
 
-## Dates
+## Project Dates
 
-- Project was done between 9th February, 2026 and 12th february 2026.
-- It will be presented on 12th February, 2026
+* Development period: **9th February 2026 – 12th February 2026**
+* Presentation date: **12th February 2026**
 
 ## Description
-- The Civil Servants Payroll System is designed to manage employee records, salary processing, departmental information, and administrative settings efficiently and securely.
+
+The **Civil Servants Payroll System** is designed to manage employee records, process salaries, organise departmental information, and handle administrative settings efficiently and securely.
 
 ## Features
-- Home: short about on purpose of the website and link accessible to log in or sign up
-- Department: shows the different ministries, in fromation about them and salaries per month
-- settings: this is where the profile of the user is.
-- contacts: interactive contact page to contact us if you need help
-- sign up: any new member can register here and all information is displayed on the profile page in  settings.
-- log in: log in information will be saved to browser
-- payroll system: it calculates the range of gross pay buy adding your allowance according to hours worked to fixed salary. It is accessible by going to setting and click link at the bottom.
+
+* **Home:** Brief introduction to the purpose of the website with links to log in or sign up.
+* **Departments:** Displays different ministries, information about them, and their monthly salaries.
+* **Settings:** Shows the user’s profile information.
+* **Contacts:** Interactive contact page for support or enquiries.
+* **Sign Up:** New users can register, and their information is displayed on the profile page in Settings.
+* **Log In:** User login information is saved in the browser.
+* **Payroll System:** Calculates the gross pay by adding allowances (based on hours worked) to the fixed salary. Accessible from the Settings page.
 
 ## Installation
-- access the GitHub repository using the link: https://github.com/stacymuthonikamau-code/Final-Project.git
-- open your VS code, using the terminal write command git clone: https://github.com/stacymuthonikamau-code/Final-Project.git or file, clone repository then paste: https://github.com/stacymuthonikamau-code/Final-Project.git
-- you can decide to go live via VS code.
-- this is a rather tedious method you can opt to view directly using live link belo
 
-### live link
-- access the website directly: 
+1. Access the GitHub repository:
+   [https://github.com/stacymuthonikamau-code/Final-Project.git](https://github.com/stacymuthonikamau-code/Final-Project.git)
 
-## help and support
-- for help contact: https://github.com/stacymuthonikamau-code/Final-Project.git
+2. Open **VS Code**.
 
-## Languages used
-- Js
-- CSS
-- HTML
+3. Open the terminal and run:
+
+   ```
+   git clone https://github.com/stacymuthonikamau-code/Final-Project.git
+   ```
+
+   Or use:
+
+   * **File → Clone Repository**
+   * Paste the repository link.
+
+4. Open the project folder and run it using **Live Server** in VS Code.
+
+## Live Link
+
+* Access the website directly:
+  *(Add your deployed link here)*
+
+## Help and Support
+
+For help, contact:
+[https://github.com/stacymuthonikamau-code/Final-Project.git](https://github.com/stacymuthonikamau-code/Final-Project.git)
+
+## Languages Used
+
+* JavaScript
+* CSS
+* HTML
