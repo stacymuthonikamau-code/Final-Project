@@ -1,3 +1,32 @@
+@media screen and (min-width: 768px){
+    body{
+        background-color: rgb(224, 249, 224);
+    }
+    #smedia{
+    display: flex;
+    justify-content: space-around;
+    }
+    article{
+    width: 350px;
+    }
+}
+
+@media screen and (max-width: 767px) and (min-width: 300px){
+    body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0 auto;
+    }
+    #smedia{
+        display: block;
+    }
+    article{
+        width: 300px;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+}
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
     margin: 0 auto;
@@ -35,13 +64,8 @@ img:hover{
 h1{
     text-align: center;
 }
-article{
-    width: 350px;
-}
-#smedia{
-    display: flex;
-    justify-content: space-around;
-}
+
+
 
 footer{
     position: fixed;
