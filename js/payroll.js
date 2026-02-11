@@ -37,7 +37,9 @@ const salaryData = {
 const ministrySelect = document.getElementById('ministrySelect');
 const positionSelect = document.getElementById('positionSelect');
 const salaryOutput = document.getElementById('salaryOutput');
-const allowanceInput = document.getElementById('allowance');
+const hoursWorkedSelect = document.getElementById('hoursWorked');
+const hoursAllowanceOutput = document.getElementById('hoursAllowanceOutput');
+
 const grossPayOutput = document.getElementById('grossPayOutput');
 
 // Update positions when ministry changes
@@ -65,17 +67,41 @@ positionSelect.addEventListener('change', () => {
     }
 });
 
+
+function getHoursAllowance(hoursRange) {
+    switch (hoursRange) {
+        case "130-159":
+            return 5000;
+        case "160-179":
+            return 10000;
+        case "180+":
+            return 20000;
+        default:
+            return 0;
+    }
+}
 // Calculate gross pay with allowance
 document.getElementById('calculateBtn').addEventListener('click', () => {
     const ministry = ministrySelect.value;
     const position = positionSelect.value;
-    const allowance = parseFloat(allowanceInput.value) || 0;
-    if(ministry && position) {
+    const hoursRange = hoursWorkedSelect.value;
+
+    if (ministry && position && hoursRange) {
+
         const [minSalary, maxSalary] = salaryData[ministry][position];
-        const grossMin = minSalary + allowance;
-        const grossMax = maxSalary + allowance;
-        grossPayOutput.textContent = `Gross Pay with Allowance: KES ${grossMin.toLocaleString()} - KES ${grossMax.toLocaleString()}`;
+
+        const hoursAllowance = getHoursAllowance(hoursRange);
+
+        hoursAllowanceOutput.textContent =
+            `Hours Allowance: KES ${hoursAllowance.toLocaleString()}`;
+
+        const grossMin = minSalary + hoursAllowance;
+        const grossMax = maxSalary + hoursAllowance;
+
+        grossPayOutput.textContent =
+            `Gross Pay: KES ${grossMin.toLocaleString()} - KES ${grossMax.toLocaleString()}`;
+
     } else {
-        alert('Please select both ministry and position.');
+        alert('Please select ministry, position and hours worked.');
     }
 });
