@@ -7,29 +7,36 @@
 </head>
 <body>
     <div id="salaryCalculator">
-    <h3>Payroll Calculator</h3>
-    <label for="ministrySelect">Select Ministry:</label>
-    <select id="ministrySelect">
-        <option value="" disabled selected>Select Ministry</option>
-        <option value="Health">Ministry of Health</option>
-        <option value="Education">Ministry of Education</option>
-    </select>
+        <h3>Payroll Calculator</h3>
+        <label for="ministrySelect">Select Ministry:</label>
+        <select id="ministrySelect">
+            <option value="" disabled selected>Select Ministry</option>
+            <option value="Health">Ministry of Health</option>
+            <option value="Education">Ministry of Education</option>
+        </select>
 
-    <label for="positionSelect">Select Position:</label>
-    <select id="positionSelect">
-        <option value="" disabled selected>Select Position</option>
-    </select>
+        <label for="positionSelect">Select Position:</label>
+        <select id="positionSelect">
+            <option value="" disabled selected>Select Position</option>
+        </select>
 
-    <p id="salaryOutput">Your salary will appear here.</p>
+        <p id="salaryOutput">Your salary will appear here.</p>
 
-    <label for="allowance">Additional Allowance (KES):</label>
-    <input type="number" id="allowance" value="0">
+        <label for="hoursWorked">Select Hours Worked This Month:</label>
+        <select id="hoursWorked">
+            <option value="" disabled selected>Hours Range</option>
+            <option value="130-159">130 - 159 hours</option>
+            <option value="160-179">160 - 179 hours</option>
+            <option value="180+">180 hours and above</option>
+        </select>
 
-    <button id="calculateBtn">Calculate Gross Pay</button>
-    <p id="grossPayOutput"></p>
-</div>
+        <p id="hoursAllowanceOutput"></p>
 
-<footer></footer>
+        <button id="calculateBtn">Calculate Gross Pay</button>
+        <p id="grossPayOutput"></p>
+    </div>
+
+    <footer><p>&copy; 2026 CIVIL SERVANT PAYROLL . All rights reserved.</p></footer>
 
 <script src="/js/payroll.js"></script>
 
