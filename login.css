@@ -1,3 +1,10 @@
+@media screen and (min-width: 320px) and (max-width: 767px){
+    form{
+        margin: 0 auto;
+        width: 270px;
+    }
+}
+
 body{
     font-family: Georgia, 'Times New Roman', Times, serif;
      background-color: rgb(224, 249, 224);
