@@ -42,3 +42,10 @@ img{
     width: 700px;
     gap: 15px;
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    margin-top: 60px;
+    font-size: 15px;
+}

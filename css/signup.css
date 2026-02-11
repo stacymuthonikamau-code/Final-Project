@@ -50,3 +50,10 @@ section ul li a:hover{
     color: purple;
     font-size: 23px;
 }
+footer {
+    text-align: center;
+    padding: 20px;
+    color: black;
+    margin-top: 60px;
+    font-size: 15px;
+}
