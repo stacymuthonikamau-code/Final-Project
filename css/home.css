@@ -13,6 +13,7 @@ h1{
 nav{
     background-color: silver;
     padding: 15px;
+    border-radius: 20px;
 }
 nav ul li{
     list-style-type: none;
