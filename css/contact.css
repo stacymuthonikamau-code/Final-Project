@@ -53,6 +53,12 @@ nav ul li a:hover{
     cursor: pointer;
 }
 
+nav{
+    background-color: silver;
+    padding: 15px;
+    border-radius: 20px;
+}
+
 div ul li{
     list-style-type: none;
 }
