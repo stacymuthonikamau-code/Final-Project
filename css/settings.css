@@ -12,12 +12,9 @@ body{
 }
 
 #ul1{
-    display: flex;
-    gap: 240px;
+    padding: 5px;
     font-size: x-large;
     
-
-   
 }
 
 
