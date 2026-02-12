@@ -1,6 +1,7 @@
+//dont start till am done filling the form
 document.addEventListener("DOMContentLoaded", function(){
 
-//book
+//blueprint
     function Employee(fname, mname, sname, email, ministry, specificjob, facility, county, institution, position) {
         this.id = Date.now();
         this.fullname = `${fname} ${mname} ${sname}`;
@@ -13,7 +14,7 @@ document.addEventListener("DOMContentLoaded", function(){
         this.position = position;
     }
 
-    //library
+    //magical note book
     function Allemployees() {
         const saved = JSON.parse(localStorage.getItem('employees')) || [];
         this.person = new Map(saved.map(emp => [emp.id, emp]));

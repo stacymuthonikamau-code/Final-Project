@@ -1,3 +1,4 @@
+//list of  all salaries
 const salaryData = {
     Health: {
         "MO Intern": [68000, 100000],
@@ -34,6 +35,7 @@ const salaryData = {
     }
 };
 
+//get elementd from pay.html
 const ministrySelect = document.getElementById('ministrySelect');
 const positionSelect = document.getElementById('positionSelect');
 const salaryOutput = document.getElementById('salaryOutput');
@@ -45,39 +47,39 @@ const grossPayOutput = document.getElementById('grossPayOutput');
 // Update positions when ministry changes
 ministrySelect.addEventListener('change', () => {
     const ministry = ministrySelect.value;
-    positionSelect.innerHTML = '<option value="" disabled selected>Select Position</option>';
-    Object.keys(salaryData[ministry]).forEach(pos => {
-        const option = document.createElement('option');
-        option.value = pos;
-        option.textContent = pos;
-        positionSelect.appendChild(option);
+    positionSelect.innerHTML = '<option value="" disabled selected>Select Position</option>'; //clear all old jobs
+    Object.keys(salaryData[ministry]).forEach(pos => { //for all jobs in the object...
+        const option = document.createElement('option'); //make new element 4 me 
+        option.value = pos; //sets value of option
+        option.textContent = pos; //sets what is the value in my dropdown
+        positionSelect.appendChild(option); //adds option to dropdown
     });
-    salaryOutput.textContent = 'Your salary will appear here.';
-    grossPayOutput.textContent = '';
+    salaryOutput.textContent = 'Your salary will appear here.'; //reset salary display
+    grossPayOutput.textContent = ''; //clears gross pay display
 });
 
 // Show salary when position is selected
 positionSelect.addEventListener('change', () => {
     const ministry = ministrySelect.value;
     const position = positionSelect.value;
-    if(ministry && position) {
-        const [minSalary, maxSalary] = salaryData[ministry][position];
-        salaryOutput.textContent = `Salary Range: KES ${minSalary.toLocaleString()} - KES ${maxSalary.toLocaleString()}`;
-        grossPayOutput.textContent = '';
+    if(ministry && position) { //if they exist...
+        const [minSalary, maxSalary] = salaryData[ministry][position]; // read what is on my object
+        salaryOutput.textContent = `Salary Range: KES ${minSalary.toLocaleString()} - KES ${maxSalary.toLocaleString()}`; //show my range please
+        grossPayOutput.textContent = ''; //clear gross pay 4 me
     }
 });
 
-
+//input hours
 function getHoursAllowance(hoursRange) {
     switch (hoursRange) {
         case "130-159":
-            return 5000;
+            return 5000; // give 5k
         case "160-179":
-            return 10000;
+            return 10000; //give 10k
         case "180+":
-            return 20000;
+            return 20000; //give 20k
         default:
-            return 0;
+            return 0; //if anything else 0
     }
 }
 // Calculate gross pay with allowance
@@ -88,20 +90,20 @@ document.getElementById('calculateBtn').addEventListener('click', () => {
 
     if (ministry && position && hoursRange) {
 
-        const [minSalary, maxSalary] = salaryData[ministry][position];
+        const [minSalary, maxSalary] = salaryData[ministry][position];//get range from object
 
-        const hoursAllowance = getHoursAllowance(hoursRange);
+        const hoursAllowance = getHoursAllowance(hoursRange);//get allowance from above
 
-        hoursAllowanceOutput.textContent =
+        hoursAllowanceOutput.textContent = //show me my allowance
             `Hours Allowance: KES ${hoursAllowance.toLocaleString()}`;
 
-        const grossMin = minSalary + hoursAllowance;
-        const grossMax = maxSalary + hoursAllowance;
+        const grossMin = minSalary + hoursAllowance;//add to min
+        const grossMax = maxSalary + hoursAllowance;//add to max
 
         grossPayOutput.textContent =
-            `Gross Pay: KES ${grossMin.toLocaleString()} - KES ${grossMax.toLocaleString()}`;
+            `Gross Pay: KES ${grossMin.toLocaleString()} - KES ${grossMax.toLocaleString()}`;//show result
 
     } else {
-        alert('Please select ministry, position and hours worked.');
+        alert('Please select ministry, position and hours worked.');//if u dont write anything
     }
 });
