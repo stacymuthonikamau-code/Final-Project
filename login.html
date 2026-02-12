@@ -4,16 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in Page</title>
-    <link rel="stylesheet" href="/css/login.css">
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
     <h1>LOG IN</h1>
-    <form action="">
-        <label for="name">Name, Email, Phonenumber:</label>
-        <input type="text" id="name" placeholder="Enter text here" required>
+    <form id="loginForm">
+        <label for="name">Name, Email, or Phone Number:</label>
+        <input type="text" id="name" required>
 
-        <label for="password">Pasword:</label>
-        <input type="password" id="password" placeholder="Enter password here" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" required>
 
         <label>
             <input type="checkbox" name="loggedin" value="keep me logged in">Keep me logged in.
@@ -30,6 +30,13 @@
         </ul>
     </section>
 
-    <footer><p>&copy; 2026 CIVIL SERVANT PAYROLL . All rights reserved.</p></footer>
+    <footer><strong><p>&copy; 2026 CIVIL SERVANT PAYROLL . All rights reserved.</p></strong></footer>
+
+    <script>
+    document.getElementById('loginForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      window.location.href = 'settings.html';
+    });
+    </script>
 </body>
 </html>
