@@ -1,63 +1,53 @@
 # PAYROLL SYSTEM
 
 ## Key Contributors
-
-* Denis Koiyo
-* Stacy Kamau
-* Julia Wambua
-* Yussuf Abdirizak Mohamed
+- Denis Koiyo
+- Stacy Kamau
+- Julia Wambua
+- Yussuf Abdirizak Mohamed
 
 ## Project Dates
-
-* Development period: **9th February 2026 – 12th February 2026**
-* Presentation date: **12th February 2026**
+- Development period: 9th February 2026 – 12th February 2026
+- Presentation date: 12th February 2026
 
 ## Description
-
-The **Civil Servants Payroll System** is designed to manage employee records, process salaries, organise departmental information, and handle administrative settings efficiently and securely.
+The Civil Servants Payroll System is designed to manage employee records, process salaries, organise departmental information, and handle administrative settings efficiently and securely.
 
 ## Features
-
-* **Home:** Brief introduction to the purpose of the website with links to log in or sign up.
-* **Departments:** Displays different ministries, information about them, and their monthly salaries.
-* **Settings:** Shows the user’s profile information.
-* **Contacts:** Interactive contact page for support or enquiries.
-* **Sign Up:** New users can register, and their information is displayed on the profile page in Settings.
-* **Log In:** User login information is saved in the browser.
-* **Payroll System:** Calculates the gross pay by adding allowances (based on hours worked) to the fixed salary. Accessible from the Settings page.
+- Home: Brief introduction to the purpose of the website with links to log in or sign up.
+- Departments: Displays different ministries, information about them, and their monthly salaries.
+- Settings: Shows the user’s profile information.
+- Contacts: Interactive contact page for support or enquiries.
+- Sign Up: New users can register, and their information is displayed on the profile page in Settings.
+- Log In: User login information is saved in the browser.
+- Payroll System: Calculates gross pay by adding allowances (based on hours worked) to the fixed salary. Accessible from the Settings page.
 
 ## Installation
-
 1. Access the GitHub repository:
-   [https://github.com/stacymuthonikamau-code/Final-Project.git](https://github.com/stacymuthonikamau-code/Final-Project.git)
+   https://github.com/stacymuthonikamau-code/Final-Project.git
 
-2. Open **VS Code**.
+2. Open VS Code.
 
 3. Open the terminal and run:
-
-   ```
    git clone https://github.com/stacymuthonikamau-code/Final-Project.git
-   ```
 
-   Or use:
+   Or:
+   - File → Clone Repository
+   - Paste the repository link
 
-   * **File → Clone Repository**
-   * Paste the repository link.
-
-4. Open the project folder and run it using **Live Server** in VS Code.
+4. Open the project folder and run it using Live Server in VS Code.
 
 ## Live Link
-
-* Access the website directly:
-  *(Add your deployed link here)*
+https://stacymuthonikamau-code.github.io/Final-Project/
 
 ## Help and Support
-
-For help, contact:
-[https://github.com/stacymuthonikamau-code/Final-Project.git](https://github.com/stacymuthonikamau-code/Final-Project.git)
+For help or issues, open a ticket in the GitHub repository:
+https://github.com/stacymuthonikamau-code/Final-Project
 
 ## Languages Used
+- JavaScript
+- CSS
+- HTML
 
-* JavaScript
-* CSS
-* HTML
+## License
+This project is licensed under the MIT License.
