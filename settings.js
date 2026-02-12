@@ -40,7 +40,7 @@ Allemployees.prototype.load = function() {
     this.render();
 }
 
-//u
+//d
 Allemployees.prototype.deletePerson = function(id) {
     this.person.delete(id);
     this.save();
@@ -63,7 +63,7 @@ Allemployees.prototype.render = function() {
             Facility: ${create.facility}<br>
             Position: ${create.position}<br>
             Institution: ${create.institution}<br>
-            Location: ${create.location}
+            Location: ${create.location}<br>
         `;
         r.appendChild(l);
     });
@@ -89,10 +89,12 @@ a.addEventListener('submit', function(event) {
         ? document.getElementById('hpositions').value 
         : document.getElementById('epositions').value;
 
-    let facility = document.getElementById('facility').value;
     let county = document.getElementById('county').value;
-    let inst = document.getElementById('inst').value;
-    let position = ministry === 'Health' ? document.getElementById('hpositions').value : document.getElementById('epositions').value;
+
+// choose facility or institution based on ministry
+    let position = ministry === 'Health' 
+        ? document.getElementById('facility').value 
+        : document.getElementById('inst').value;
 
     let final = new Employee(
         fname, mname, sname, email, ministry, specificjob,
