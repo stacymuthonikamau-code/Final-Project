@@ -92,9 +92,12 @@ a.addEventListener('submit', function(event) {
     let county = document.getElementById('county').value;
 
 // choose facility or institution based on ministry
-    let position = ministry === 'Health' 
-        ? document.getElementById('facility').value 
-        : document.getElementById('inst').value;
+    let position = ministry === 'Health'
+        ? document.getElementById('facility').value: '';
+    let inst = ministry === 'Education' 
+        ? document.getElementById('inst').value: '';
+        
+
 
     let final = new Employee(
         fname, mname, sname, email, ministry, specificjob,
