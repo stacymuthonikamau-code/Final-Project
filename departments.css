@@ -1,62 +1,152 @@
-@media screen and (min-width: 768px){
-    #Health{
+/* =========================
+   Global Styles
+========================= */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1b1b1b;
+    line-height: 1.6;
+    margin: 0 auto;
+    padding: 0;
+    background-color: #f5fff5;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+    background-color: #c8f0d3;
+    padding: 15px 20px;
+    border-radius: 25px;
+    margin: 0 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
     display: flex;
-    width: 750px;
+    justify-content: center;
     gap: 15px;
-    }
-#EDUCATION{
-    display: flex;
-    width: 700px;
-    gap: 15px;
-    }
-    img{
-    width: 200px;
-    }
+    flex-wrap: wrap;
 }
 
-@media screen and (max-width: 767px) and (min-width: 300px){
-    img{
-    width: 320px;
-    }
+nav ul li {
+    list-style: none;
 }
 
-nav ul li{
-    list-style-type: none;
-}
-
-nav{
-    background-color: silver;
-    padding: 15px;
-    border-radius: 20px;
-}
-
-nav ul li a{
+nav ul li a {
     text-decoration: none;
-    color: rgb(14, 1, 1);
-    display :flex;
-    font-weight: bold;
-    padding: 8px 14px;        
-    border-radius: 6px;     
+    color: #1b1b1b;
+    font-weight: 600;
+    display: flex;
+    padding: 8px 14px;
+    border-radius: 12px;
+    position: relative;
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover{
-    background-color: rgba(52, 51, 51, 0.27);
-    color: white;
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: #ff7f50;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    background-color: #a1e3b8;
+    color: #fff;
     transform: scale(1.05);
-    cursor: pointer;
-}
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    background-color: rgb(224, 249, 224);
 }
 
+/* =========================
+   Section Layout
+========================= */
+#Health, #EDUCATION {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
+#Health {
+    width: 750px;
+}
 
+#EDUCATION {
+    width: 700px;
+}
+
+/* =========================
+   Images
+========================= */
+img {
+    width: 200px;
+    height: auto;
+    border-radius: 20px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.05);
+    filter: brightness(1.2);
+}
+
+/* =========================
+   Footer
+========================= */
 footer {
     text-align: center;
     padding: 20px;
-    color: black;
+    color: #1b1b1b;
+    font-size: 0.9rem;
     margin-top: 60px;
-    font-size: 15px;
+    background-color: #c8f0d3;
+    border-top: 2px solid #81c784;
+    border-radius: 10px;
+}
+
+/* =========================
+   Responsive Media Queries
+========================= */
+@media screen and (max-width: 767px) and (min-width: 300px) {
+    #Health, #EDUCATION {
+        display: block;
+        width: 100%;
+        margin: 0 auto 20px auto;
+    }
+
+    img {
+        width: 320px;
+        max-width: 90%;
+        margin: 0 auto;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    #Health, #EDUCATION {
+        flex-wrap: nowrap;
+        justify-content: space-around;
+    }
+
+    img {
+        width: 200px;
+    }
 }

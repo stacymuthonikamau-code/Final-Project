@@ -1,45 +1,96 @@
-nav{
-    background-color: silver;
-    padding: 15px;
-    border-radius: 20px;
-}
-nav ul li{
-    list-style-type: none;
+/* =========================
+   Global Styles
+========================= */
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: #1b1b1b;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5fff5;
 }
 
-nav ul li a{
+html {
+    scroll-behavior: smooth;
+}
+
+/* =========================
+   Navigation
+========================= */
+nav {
+    background-color: #c8f0d3;
+    padding: 15px 20px;
+    border-radius: 25px;
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    width: 350px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
     text-decoration: none;
-    color: rgb(14, 1, 1);
-    display :flex;
-    font-weight: bold;
-    padding: 8px 14px;        
-    border-radius: 6px;     
+    color: #1b1b1b;
+    font-weight: 600;
+    display: flex;
+    padding: 8px 14px;
+    border-radius: 12px;
+    position: relative;
     transition: all 0.3s ease;
 }
 
-nav ul li a:hover{
-    background-color: rgba(52, 51, 51, 0.27);
-    color: white;
-    transform: scale(1.05);
-    cursor: pointer;
+nav ul li a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background: #ff7f50;
+    border-radius: 2px;
+    transition: width 0.3s ease;
 }
 
-body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: black;
-    background-color: rgb(224, 249, 224);
-    line-height: normal;
+nav ul li a:hover::after {
+    width: 100%;
 }
+
+nav ul li a:hover {
+    background-color: #a1e3b8;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+/* =========================
+   Lists
+========================= */
+ul {
+    width: 350px;
+    margin: 20px auto;
+    padding: 0;
+}
+
+/* =========================
+   Footer
+========================= */
 footer {
     text-align: center;
     padding: 20px;
-    color: black;
+    color: #1b1b1b;
+    font-size: 0.9rem;
     margin-top: 60px;
-    font-size: 15px;
+    background-color: #c8f0d3;
+    border-top: 2px solid #81c784;
+    border-radius: 10px;
 }
-ul{
-    width: 350px;
-}
-
-
-
